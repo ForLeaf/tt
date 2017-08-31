@@ -1,1 +1,7 @@
+#过滤node-moudle
+/node_modules/
+
+#过滤压缩文件
+*.zip *.rar *.7z
+
 #
