@@ -1,0 +1,111 @@
+ul, li { list-style: none; }
+
+img { border: 0; display: block; }
+
+a { text-decoration: none; }
+
+.container { margin: 0 auto; min-width: 1200px; max-width: 1200px; }
+
+.clearfix:before { clear: both; display: block; content: ''; height: 0; visibility: hidden; overflow: hidden; }
+
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li, span, strong, em, p { padding: 0; margin: 0; }
+
+#page { width: 100%; height: 100%; background-color: #cfcfcf; }
+
+.header { height: 100px; border-bottom: 1px solid #ddd; overflow: hidden; }
+
+.header .logo { height: 36px; margin-top: 30px; }
+
+.header .logo img { height: 100%; }
+
+.main { width: 100%; height: 520px; background: url("../img/PC_.jpg") no-repeat center center; }
+
+.main .container { position: relative; }
+
+.main .container .regArea { position: absolute; right: 0; top: 60px; background-color: #fff; width: 410px; }
+
+.main .container .regArea .regArea_form { box-sizing: border-box; padding: 30px; padding-bottom: 15px; border-bottom: 1px solid #ddd; width: 100%; }
+
+.main .container .regArea .regArea_form .reg_head { width: 100%; line-height: 1; overflow: hidden; }
+
+.main .container .regArea .regArea_form .reg_head .reg_title { float: left; font-size: 18px; }
+
+.main .container .regArea .regArea_form .reg_head a { float: right; font-size: 14px; }
+
+.main .container .regArea .regArea_form .reg_msg { margin: 15px 0; width: 100%; border: 1px solid #fc0; padding: 6px 0 6px 40px; line-height: 1.4; font-size: 14px; color: #ff5073; box-sizing: border-box; background: url("../img/erroricon.png") no-repeat 10px center; display: none; }
+
+.main .container .regArea .regArea_form .reg_box { width: 100%; height: 40px; box-sizing: border-box; padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin: 15px 0; }
+
+.main .container .regArea .regArea_form .reg_box input { width: 100%; height: 100%; border: 0; border-radius: 4px; }
+
+.main .container .regArea .regArea_form .auth_code { margin: 15px 0; height: 40px; overflow: hidden; }
+
+.main .container .regArea .regArea_form .auth_code .reg_in { float: left; height: 100%; box-sizing: border-box; width: 230px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+
+.main .container .regArea .regArea_form .auth_code .reg_in input { width: 100%; height: 100%; border: 0; border-radius: 4px; }
+
+.main .container .regArea .regArea_form .auth_code .reg_ch { float: right; width: 110px; height: 100%; box-sizing: border-box; border: 1px solid #ddd; border-radius: 4px; }
+
+.main .container .regArea .regArea_form .auth_code .reg_ch .reg_ch_btn { display: block; width: 100%; height: 100%; cursor: pointer; border: 0; border-radius: 4px; font-size: 14px; color: #ff5073; line-height: 40px; text-align: center; }
+
+.main .container .regArea .regArea_form .reg_box_btn { width: 100%; height: 40px; border: 0; }
+
+.main .container .regArea .regArea_form .reg_box_btn .reg_btn { border: 0; background-color: #ff5073; color: #fff; font-size: 18px; line-height: 40px; text-align: center; outline: none; display: block; width: 100%; height: 100%; cursor: pointer; border-radius: 4px; }
+
+.main .container .regArea .regArea_form .reg_ot_msg { font-size: 14px; text-align: center; line-height: 1.4; margin-top: 12px; }
+
+.main .container .regArea .regArea_form .reg_ot_msg a { color: #ff5073; }
+
+.main .container .regArea .reg_by_other { width: 100%; height: 50px; }
+
+.main .container .regArea .reg_by_other span { display: inline-block; margin: 15px 30px; line-height: 1.4; font-size: 14px; vertical-align: top; }
+
+.main .container .regArea .reg_by_other a { display: inline-block; margin-top: 12px; margin-right: 20px; width: 30px; height: 24px; }
+
+.main .container .regArea .reg_by_other a.weixin { background: url("../img/wechatIn.png") no-repeat center center; }
+
+.main .container .regArea .reg_by_other a.weibo { background: url("../img/weiboIn.png") no-repeat center center; }
+
+.main .container .regArea .reg_by_other a.qq { background: url("../img/qqIn.png") no-repeat center center; }
+
+.footer .footer_row_first { background-color: #f3f1f2; overflow: hidden; width: 100%; border-bottom: 1px solid #ddd; }
+
+.footer .footer_row_first ul { overflow: hidden; width: 100%; }
+
+.footer .footer_row_first ul li { float: left; width: 25%; padding: 40px 0; text-align: center; }
+
+.footer .footer_row_first ul li img { display: inline-block; }
+
+.footer .footer_row_first ul li p { margin: 4px 0; }
+
+.footer .footer_row_sec { border-bottom: 1px solid #ddd; padding: 40px 0; overflow: hidden; width: 100%; }
+
+.footer .footer_row_sec .footer_r_s_left { float: left; width: 33%; height: 216px; text-align: center; }
+
+.footer .footer_row_sec .footer_r_s_left > img { display: inline-block; }
+
+.footer .footer_row_sec .footer_r_s_left p { font-size: 14px; font-weight: bold; margin: 8px 0; }
+
+.footer .footer_row_sec .footer_r_s_left .fo_ot div { display: inline-block; }
+
+.footer .footer_row_sec .footer_r_s_right { float: right; width: 67%; overflow: hidden; }
+
+.footer .footer_row_sec .footer_r_s_right ul { overflow: hidden; float: left; width: 25%; box-sizing: border-box; border-left: 1px solid #ddd; }
+
+.footer .footer_row_sec .footer_r_s_right ul li { padding: 7px 0; font-size: 14px; color: #333333; margin-left: 35px; }
+
+.footer .footer_row_sec .footer_r_s_right ul li.fo_sec_title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+
+.footer .footer_row_sec .footer_r_s_right ul li a { color: #333; }
+
+.footer .footer_row_sec .footer_r_s_right ul li a:hover { color: #ff5073; }
+
+.footer .footer_row_thr { width: 100%; padding: 15px 0; border-bottom: 1px solid #ddd; text-align: center; font-size: 14px; line-height: 1.8; }
+
+.footer .footer_row_thr p { font-weight: bold; }
+
+.footer .footer_row_thr span { display: inline-block; margin: 0 15px; }
+
+.footer .footer_row_for { width: 100%; padding: 5px 0; text-align: center; font-size: 12px; line-height: 2; }
+
+.footer .footer_row_for span { margin: 0 15px; display: inline-block; color: #666; cursor: pointer; }
