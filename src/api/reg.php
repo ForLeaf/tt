@@ -13,8 +13,8 @@
 
 	 include 'connect.php';
 
-	 $username = isset($_GET['username'])? $_GET['username'] : '';
-	 $password = isset($_GET['password'])? $_GET['password'] : '';
+	 $username = isset($_POST['username'])? $_POST['username'] : '';
+	 $password = isset($_POST['password'])? $_POST['password'] : '';
 
 	 //查看用户名是否存在
 	$sql = "select username from user where username = '$username'";
@@ -37,7 +37,7 @@
 		$result = $conn->query($sql);
 
 		if($result){
-			echo resStr(true,[],'插入数据成功');
+			echo resStr(true,[],'用户注册成功');
 		}else{
 			echo resStr(false,[],'Error: '.$sql.'<br>'.$conn->error);
 		}

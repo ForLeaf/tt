@@ -98,17 +98,7 @@ input { outline: none; }
 
 .main .container .regArea .regArea_form .reg_box input { width: 100%; height: 100%; border: 0; border-radius: 4px; }
 
-.main .container .regArea .regArea_form .auth_code { margin: 15px 0; height: 40px; overflow: hidden; }
-
-.main .container .regArea .regArea_form .auth_code .reg_in { float: left; height: 100%; box-sizing: border-box; width: 230px; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
-
-.main .container .regArea .regArea_form .auth_code .reg_in input { width: 100%; height: 100%; border: 0; border-radius: 4px; }
-
-.main .container .regArea .regArea_form .auth_code .reg_ch { float: right; width: 110px; height: 100%; box-sizing: border-box; border: 1px solid #ddd; border-radius: 4px; }
-
-.main .container .regArea .regArea_form .auth_code .reg_ch .reg_ch_btn { display: block; width: 100%; height: 100%; cursor: pointer; border: 0; border-radius: 4px; font-size: 14px; color: #ff5073; line-height: 40px; text-align: center; }
-
-.main .container .regArea .regArea_form .reg_box_btn { width: 100%; height: 40px; border: 0; }
+.main .container .regArea .regArea_form .reg_box_btn { width: 100%; height: 40px; border: 0; border: 0; }
 
 .main .container .regArea .regArea_form .reg_box_btn .reg_btn { border: 0; background-color: #ff5073; color: #fff; font-size: 18px; line-height: 40px; text-align: center; outline: none; display: block; width: 100%; height: 100%; cursor: pointer; border-radius: 4px; }
 

@@ -1,8 +1,8 @@
 <?php
 	include 'connect.php';
 
-	$username = isset($_GET['username'])? $_GET['username'] : '';
-	$password = isset($_GET['password'])? $_GET['password'] : '';
+	$username = isset($_POST['username'])? $_POST['username'] : '';
+	$password = isset($_POST['password'])? $_POST['password'] : '';
 
 	//md5加密
 	$password = md5($password);

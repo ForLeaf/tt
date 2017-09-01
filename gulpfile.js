@@ -33,7 +33,7 @@ gulp.task('server', function () {
 		port: 2008,
 
 		// 监听文件修改，自动刷新浏览器
-		files: ['./src/**/*.html', './src/css/*.css', './src/api/*.php']
+		files: ['./src/**/*.html', './src/css/*.css', './src/api/*.php','./src/js/*.js']
 	});
 
 
