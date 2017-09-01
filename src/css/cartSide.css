@@ -1,0 +1,73 @@
+ul, li { list-style: none; }
+
+img { border: 0; display: block; }
+
+a { text-decoration: none; }
+
+.container { margin: 0 auto; min-width: 1200px; max-width: 1200px; }
+
+.clearfix:before { clear: both; display: block; content: ''; height: 0; visibility: hidden; overflow: hidden; }
+
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li, span, strong, em, p { padding: 0; margin: 0; }
+
+input { outline: none; }
+
+body, html { width: 100%; height: 100%; }
+
+.cartSide { height: 100%; width: 40px; z-index: 999; right: 0; position: fixed; top: 0; background-color: transparent; }
+
+.cartSide .cs_main { width: 100%; height: 100%; position: absolute; right: 0; top: 0; z-index: 1999; background-color: rgba(0, 0, 0, 0.6); }
+
+.cartSide .cs_main ul { width: 100%; height: 100%; }
+
+.cartSide .cs_main ul li { width: 100%; box-sizing: border-box; position: relative; margin-bottom: 10px; text-align: center; }
+
+.cartSide .cs_main ul li div { box-sizing: border-box; height: 36px; padding: 0 14px; line-height: 36px; font-size: 14px; color: #d8d8d8; position: absolute; top: 0; left: -100px; background-color: rgba(0, 0, 0, 0.7); display: none; }
+
+.cartSide .cs_main ul li div::before { content: ''; display: block; width: 0; height: 0; border: 6px solid transparent; border-left: 6px solid rgba(0, 0, 0, 0.7); position: absolute; right: -12px; top: 12px; }
+
+.cartSide .cs_main ul li a { color: #d8d8d8; text-align: center; display: block; }
+
+.cartSide .cs_main ul li a span { display: block; font-size: 20px; line-height: 40px; }
+
+.cartSide .cs_main ul li:hover { background-color: #ed145b; transition: all .5s; opacity: 1; }
+
+.cartSide .cs_main ul li.cs_li_cart { margin-top: 150px; }
+
+.cartSide .cs_main ul li.cs_li_cart p { font-size: 14px; box-sizing: border-box; width: 100%; padding: 0 10px; }
+
+.cartSide .cs_main ul li.cs_li_cart .goods_num { font-size: 14px; font-style: normal; display: block; width: 20px; height: 20px; background-color: #ed145b; border-radius: 50%; line-height: 20px; margin: 5px auto; }
+
+.cartSide .cs_main ul li.cs_li_kefu { margin-top: 80px; }
+
+.cartSide .cs_op_cart { width: 280px; height: 100%; background-color: #fff; border-left: 5px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: -285px; }
+
+.cartSide .cs_op_cart .cs_cart_top { padding: 0 10px; height: 40px; line-height: 39px; border-bottom: 1px solid #ddd; position: relative; }
+
+.cartSide .cs_op_cart .cs_cart_top p { font-size: 16px; }
+
+.cartSide .cs_op_cart .cs_cart_top p span { display: inline-block; vertical-align: baseline; margin-right: 8px; }
+
+.cartSide .cs_op_cart .cs_cart_top .cart_close { position: absolute; right: 10px; top: 8px; display: block; font-size: 26px; line-height: 26px; text-align: center; cursor: pointer; }
+
+.cartSide .cs_op_cart .cs_cart_main { box-sizing: border-box; padding: 5px 10px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_type { font-size: 14px; line-height: 2; padding-bottom: 10px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul { width: 100%; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li { box-sizing: border-box; padding: 15px 0; border-bottom: 1px solid #ddd; overflow: hidden; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left { float: left; margin-left: 10px; padding: 5px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left a { display: block; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left a img { width: 88px; height: 95px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right { float: right; width: 150px; font-size: 14px; line-height: 1.6; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .goods_title a { color: #333; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_add, .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_cut { font-size: 18px; line-height: 1.2; color: #ccc; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_cut { font-size: 20px; }
