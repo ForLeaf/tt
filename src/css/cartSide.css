@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul, li { list-style: none; }
 
 img { border: 0; display: block; }
@@ -40,7 +41,7 @@ body, html { width: 100%; height: 100%; }
 
 .cartSide .cs_main ul li.cs_li_kefu { margin-top: 80px; }
 
-.cartSide .cs_op_cart { width: 280px; height: 100%; background-color: #fff; border-left: 5px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: -285px; }
+.cartSide .cs_op_cart { width: 280px; height: 100%; background-color: #fff; border-left: 5px solid rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 40px; }
 
 .cartSide .cs_op_cart .cs_cart_top { padding: 0 10px; height: 40px; line-height: 39px; border-bottom: 1px solid #ddd; position: relative; }
 
@@ -56,7 +57,7 @@ body, html { width: 100%; height: 100%; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul { width: 100%; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li { box-sizing: border-box; padding: 15px 0; border-bottom: 1px solid #ddd; overflow: hidden; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li { box-sizing: border-box; padding: 15px 0 5px 0; border-bottom: 1px solid #ddd; overflow: hidden; position: relative; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left { float: left; margin-left: 10px; padding: 5px; }
 
@@ -71,3 +72,23 @@ body, html { width: 100%; height: 100%; }
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_add, .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_cut { font-size: 18px; line-height: 1.2; color: #ccc; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_cut { font-size: 20px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_price { color: #ff5073; line-height: 1.4; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_price::before { content: '￥'; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_remove { position: absolute; right: 6px; top: 80px; color: #bbb; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_remove span { font-size: 18px; }
+
+.cartSide .cs_op_cart .goods_total { font-size: 14px; line-height: 1.4; padding: 10px; border-bottom: 1px dotted #ddd; }
+
+.cartSide .cs_op_cart .goods_total span { color: #ff5073; }
+
+.cartSide .cs_op_cart .goods_total span.total_price { float: right; margin-right: 10px; }
+
+.cartSide .cs_op_cart .goods_total span.total_price::before { content: '￥'; }
+
+.cartSide .cs_op_cart .cart_submit { margin: 20px 0; box-sizing: border-box; width: 100%; padding: 0 10px; }
+
+.cartSide .cs_op_cart .cart_submit .submit_btn { width: 100%; height: 100%; border: 0; border-radius: 4px; background-color: #ed145b; color: #fff; font-size: 16px; padding: 8px 0; }
