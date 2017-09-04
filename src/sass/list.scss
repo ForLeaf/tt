@@ -1,0 +1,117 @@
+@import 'var';
+@import 'common';
+
+.main{
+	margin-top: 10px;
+	.main_nav{
+		box-sizing: border-box;
+		width: 100%;
+		height: 58px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 5px 0;
+		line-height: 48px;
+		.main_nav_total{
+			float: left;
+		}
+		.nav_total_select{
+			float: left;
+			margin-left: 15px;
+			&>select{
+				width: 54px;
+				height: 28px;
+				text-align: center;
+			}
+		}
+		.nav_order{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-left: 6px;
+			margin-top: 10px;
+			background: url('./img/pix.png') no-repeat 0 -87px transparent;
+			transition: all .5s;
+			&:hover{
+				background-color: #000;
+				color: #fff;
+				background-position: -30px -87px;
+			}
+		}
+	}
+	.list_main_goodslist{
+		.mc_goods_show_ul{
+			width: 100%;
+			li{
+				float: left;
+				width: 25%;
+				box-sizing: border-box;
+				padding: 0 30px;
+				.mc_goodsCard{
+					border: 1px solid transparent;
+					box-sizing: border-box;
+					padding: 10px;
+					&:hover{
+						border: 1px solid #ccc;
+						box-shadow: 0 0 10px 0 #ccc;
+					}
+				}
+				.mc_goodsCard_img{
+					box-sizing: border-box;
+					padding: 10px 40px 20px 40px;
+					img{
+						width: 100%;
+					}
+				}
+				.mc_goodsCard_title{
+					margin-top: 6px;
+					text-align: center;
+					.goods_category{
+						font-size: 14px;
+						line-height: 2;
+					}
+					.goods_goodsName{
+						font-size: 16px;
+						line-height: 2;
+					}
+				}
+				.mc_goodsCard_price{
+					text-align: center;
+					.mc_goodsCard_ourProce{
+						font-size: 16px;
+						line-height: 30px;
+						color: #ff7e00;
+						&::before{
+							content:'￥';
+						}
+					}
+					.mc_goodsCard_price_ll{
+						.mc_goodsCard_price_show{
+							font-size: 14px;
+							text-decoration: line-through;
+							line-height: 30px;
+							color:#ccc;
+							&::before{
+								content:'￥';
+							}
+						}
+					}
+					.mc_goodsCard_cartOnBtn{
+						text-align: center;
+						margin-top: 6px;
+						button{
+							width: 140px;
+							height:40px;
+							border: 0;
+							background: rgb(253, 73, 172);
+							border-radius: 4px;
+							color:#fff;
+							font-size: 16px;
+							outline: none;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+ul, li { list-style: none; }
+
+img { border: 0; display: block; }
+
+a { text-decoration: none; }
+
+.container { margin: 0 auto; min-width: 1200px; max-width: 1200px; }
+
+.clearfix:after { clear: both; display: block; content: ''; height: 0; visibility: hidden; overflow: hidden; }
+
+body, html, h1, h2, h3, h4, h5, h6, p, ul, li, span, strong, em, p { padding: 0; margin: 0; }
+
+input { outline: none; }
+
+body, html { width: 100%; height: 100%; }
+
+.main { margin-top: 10px; }
+
+.main .main_nav { box-sizing: border-box; width: 100%; height: 58px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 0; line-height: 48px; }
+
+.main .main_nav .main_nav_total { float: left; }
+
+.main .main_nav .nav_total_select { float: left; margin-left: 15px; }
+
+.main .main_nav .nav_total_select > select { width: 54px; height: 28px; text-align: center; }
+
+.main .main_nav .nav_order { display: inline-block; width: 30px; height: 30px; margin-left: 6px; margin-top: 10px; background: url("./img/pix.png") no-repeat 0 -87px transparent; transition: all .5s; }
+
+.main .main_nav .nav_order:hover { background-color: #000; color: #fff; background-position: -30px -87px; }
+
+.main .list_main_goodslist .mc_goods_show_ul { width: 100%; }
+
+.main .list_main_goodslist .mc_goods_show_ul li { float: left; width: 25%; box-sizing: border-box; padding: 0 30px; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard { border: 1px solid transparent; box-sizing: border-box; padding: 10px; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard:hover { border: 1px solid #ccc; box-shadow: 0 0 10px 0 #ccc; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_img { box-sizing: border-box; padding: 10px 40px 20px 40px; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_img img { width: 100%; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_title { margin-top: 6px; text-align: center; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_title .goods_category { font-size: 14px; line-height: 2; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_title .goods_goodsName { font-size: 16px; line-height: 2; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price { text-align: center; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_ourProce { font-size: 16px; line-height: 30px; color: #ff7e00; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_ourProce::before { content: '￥'; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_price_ll .mc_goodsCard_price_show { font-size: 14px; text-decoration: line-through; line-height: 30px; color: #ccc; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_price_ll .mc_goodsCard_price_show::before { content: '￥'; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_cartOnBtn { text-align: center; margin-top: 6px; }
+
+.main .list_main_goodslist .mc_goods_show_ul li .mc_goodsCard_price .mc_goodsCard_cartOnBtn button { width: 140px; height: 40px; border: 0; background: #fd49ac; border-radius: 4px; color: #fff; font-size: 16px; outline: none; cursor: pointer; }
