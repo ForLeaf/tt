@@ -36,4 +36,165 @@
 			}
 		}
 	}
+	.cu_header_step{
+		padding: 40px 0;
+		h1{
+			float: left;
+		}
+		.cu_header_ul{
+			float: right;
+			li{
+				float: left;
+				text-align: center;
+				line-height: 22px;
+				font-size: 14px;
+				position: relative;
+				margin: 0 60px;
+				background: transparent;
+				span{
+					display: inline-block;
+					width: 22px;
+					height: 22px;
+					border-radius: 50%;
+					font-weight: bold;
+					background: #ddd;
+					color: #fff;
+				}
+				i{
+					position: absolute;
+					width: 146px;
+					height: 0;
+					left: -130px;
+					top: 10px;
+					border: 2px solid #ddd;
+				}
+				div{
+					line-height: 2;
+					color:#999;
+				}
+				&.cu_li_step03{
+					i{
+						width: 152px;
+						left: -138px;
+					}
+				}
+				&.active{
+					span{
+						background: #ff738f;
+					}
+					i{
+						border:2px solid #ff738f; 
+					}
+
+				}
+			}
+		}
+	}
+}
+.main{
+	.cu_main_table01{
+		box-sizing: border-box;
+		padding: 0 10px;
+		.table{
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			th,td{
+				height: 40px;
+				vertical-align: middle;
+			}
+			.radioGroup{
+				.radioItem{
+					width: 18px;
+					height: 18px;
+					display: inline-block;
+					margin-right: 5px;
+					cursor: pointer;
+					vertical-align: middle;
+					background: url('./img/mbar-smallICon.png') no-repeat -226px -28px;
+				}
+			}
+			.TypeIcon{
+				width: 20px;
+				height: 20px;
+				position: static;
+			}
+			.smallIcon{
+				text-decoration: line-through;
+				cursor: pointer;
+				display: inline-block;
+				vertical-align: middle;
+				z-index: 10px;
+				background: url('./img/mbar-smallICon.png') no-repeat;
+			}
+			&.sec_table{
+				border: 0;
+				margin-bottom: 0;
+				td{
+					border: 0;
+				}
+				.cu_table02_th02{
+					p{
+						padding: 0 5px;
+						font-size: 18px;
+						color:#6699ff;
+						i{
+							background-position: 0 -60px;
+						}
+						span{
+							font-size:14px;
+						}
+					}
+				}
+			}
+			.cu_goods_msg{
+				overflow:hidden;
+				box-sizing: border-box;
+				padding:10px;
+				a{
+					color: #333;
+					&:hover{
+						color: #ff5073;
+					}
+				}
+				img{
+					float:left;
+					margin-right: 10px;
+					border: 1px solid #ccc;
+				}
+			}
+			.cu_goods_price::before,.total_price::before{
+				content: '￥';
+			}
+			.cu_remove_btn:hover{
+				color:#ff5073;
+			}
+			.cu_goods_num{
+				border: 1px solid #ccc;
+				overflow: hidden;
+				display:inline-block;
+				span{
+					display:block;
+					float: left;
+					height: 22px;
+					line-height: 22px;
+					width: 30px;
+					text-align: center;
+					&.num_show{
+						border-left: 1px solid #ccc;
+						border-right: 1px solid #ccc;
+						width: 34px;
+					}
+					&.num_sub,&.num_add{
+						background: #eaeaea;
+						cursor: pointer;
+					}
+				}
+			}
+			.for_table{
+				td{
+					height: 50px;
+				}
+			}
+		}
+	}
 }

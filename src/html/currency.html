@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/currency.css">
+	<link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="header">
@@ -29,22 +30,116 @@
 				</div>
 			</div>
 		</div>
-		<div class="cu_step">
-			<h1><a href="../index.html"><img src="../img/new-logo_memebox-china.png" alt="美美箱"></a></h1>
-			<ul>
-				<li class="cu_li_step01 active">
-					<span>1</span>
-					<div></div>
-				</li>
-				<li class="cu_li_step02">
-					<span>2</span>
-					<div></div>
-				</li>
-				<li class="cu_li_step03">
-					<span>3</span>
-					<div></div>
-				</li>
-			</ul>
+		<div class="container">
+			<div class="cu_header_step clearfix">
+				<h1><a href="../index.html"><img src="../img/new-logo_memebox-china.png" alt="美美箱"></a></h1>
+				<ul class="cu_header_ul">
+					<li class="cu_li_step01 active">
+						<span>1</span>
+						<div>购物车</div>
+					</li>
+					<li class="cu_li_step02">
+						<span>2</span>
+						<div>提交订单</div>
+						<i></i>
+					</li>
+					<li class="cu_li_step03">
+						<span>3</span>
+						<div>选择支付</div>
+						<i></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="cu_main_table01">
+				<table class="table" >
+					<tbody>
+					<tr class="row">
+						<th class="col-md-1 radioGroup selectAll"><i class="radioItem"></i></th>
+						<th class="col-md-4 cu_table01_th02">商品信息</th>
+						<th class="col-md-1">规格</th>
+						<th class="col-md-2">单价</th>
+						<th class="col-md-2">数量</th>
+						<th class="col-md-1">金额</th>
+						<th class="col-md-1">操作</th>
+					</tr>
+					</tbody>
+				</table>
+				<table class="table sec_table" >
+					<tbody>
+						<tr class="row">
+							<td class="col-md-1 radioGroup selectGroup_01"><i class="radioItem"></i></td>
+							<td class="col-md-11 cu_table02_th02">
+								<p><i class="TypeIcon smallIcon"></i>其他商品 <span>满99元包邮</span></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table thr_table">
+					<tbody>
+						<tr class="row">
+							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
+							<td class="col-md-4">
+								<div class="cu_goods_msg">
+									<a href="">
+										<img src="../img/goods/goods_001_sma.jpg" alt="you see">
+										<span>SKINFOOD 思亲肤 荞麦蜜粉散粉23g 40#紫色</span>
+									</a>
+								</div>
+							</td>
+							<td class="col-md-1"><span>--</span></td>
+							<td class="col-md-2"><span class="cu_goods_price">49.00</span></td>
+							<td class="col-md-2">
+								<div class="cu_goods_num">
+									<span class="num_sub">-</span>
+									<span class="num_show"></span>
+									<span class="num_add">+</span>
+								</div>
+							</td>
+							<td class="col-md-1"><span class="total_price">196</span></td>
+							<td class="col-md-1"><span class="cu_remove_btn">删除</span></td>
+						</tr>
+						<tr class="row">
+							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
+							<td class="col-md-4">商品信息</td>
+							<td class="col-md-1">规格</td>
+							<td class="col-md-2">单价</td>
+							<td class="col-md-2">数量</td>
+							<td class="col-md-1">金额</td>
+							<td class="col-md-1">操作</td>
+						</tr>
+						<tr class="row">
+							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
+							<td class="col-md-4">商品信息</td>
+							<td class="col-md-1">规格</td>
+							<td class="col-md-2">单价</td>
+							<td class="col-md-2">数量</td>
+							<td class="col-md-1">金额</td>
+							<td class="col-md-1">操作</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table for_table">
+					<tbody>
+						<tr class="row">
+							<td class="col-md-1 radioGroup selectAll"><i class="radioItem"></i></td>
+							<td class="col-md-1">
+								<p class="deleteAll"><i class="TypeIcon smallIcon"></i>删除</p>
+							</td>
+							<td class="col-md-7">
+								<p class="removeAll"><i class="TypeIcon smallIcon"></i>清空失效的商品</p>
+							</td>
+							<td class="col-md-2">
+								<p class="totalPrice">总计: <span>359.00</span><span>(不含运费)</span></p>
+							</td>
+							<td class="col-md-1"><button>结算</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </body>

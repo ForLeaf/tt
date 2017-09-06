@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul, li { list-style: none; }
 
 img { border: 0; display: block; }
@@ -29,3 +30,67 @@ body, html { width: 100%; height: 100%; }
 .header .he_top .container .he_top_right ul li { float: left; margin: 0 10px; }
 
 .header .he_top .container .he_top_right ul li a { color: white; }
+
+.header .cu_header_step { padding: 40px 0; }
+
+.header .cu_header_step h1 { float: left; }
+
+.header .cu_header_step .cu_header_ul { float: right; }
+
+.header .cu_header_step .cu_header_ul li { float: left; text-align: center; line-height: 22px; font-size: 14px; position: relative; margin: 0 60px; background: transparent; }
+
+.header .cu_header_step .cu_header_ul li span { display: inline-block; width: 22px; height: 22px; border-radius: 50%; font-weight: bold; background: #ddd; color: #fff; }
+
+.header .cu_header_step .cu_header_ul li i { position: absolute; width: 146px; height: 0; left: -130px; top: 10px; border: 2px solid #ddd; }
+
+.header .cu_header_step .cu_header_ul li div { line-height: 2; color: #999; }
+
+.header .cu_header_step .cu_header_ul li.cu_li_step03 i { width: 152px; left: -138px; }
+
+.header .cu_header_step .cu_header_ul li.active span { background: #ff738f; }
+
+.header .cu_header_step .cu_header_ul li.active i { border: 2px solid #ff738f; }
+
+.main .cu_main_table01 { box-sizing: border-box; padding: 0 10px; }
+
+.main .cu_main_table01 .table { box-sizing: border-box; border: 1px solid #ccc; }
+
+.main .cu_main_table01 .table th, .main .cu_main_table01 .table td { height: 40px; vertical-align: middle; }
+
+.main .cu_main_table01 .table .radioGroup .radioItem { width: 18px; height: 18px; display: inline-block; margin-right: 5px; cursor: pointer; vertical-align: middle; background: url("./img/mbar-smallICon.png") no-repeat -226px -28px; }
+
+.main .cu_main_table01 .table .TypeIcon { width: 20px; height: 20px; position: static; }
+
+.main .cu_main_table01 .table .smallIcon { text-decoration: line-through; cursor: pointer; display: inline-block; vertical-align: middle; z-index: 10px; background: url("./img/mbar-smallICon.png") no-repeat; }
+
+.main .cu_main_table01 .table.sec_table { border: 0; margin-bottom: 0; }
+
+.main .cu_main_table01 .table.sec_table td { border: 0; }
+
+.main .cu_main_table01 .table.sec_table .cu_table02_th02 p { padding: 0 5px; font-size: 18px; color: #6699ff; }
+
+.main .cu_main_table01 .table.sec_table .cu_table02_th02 p i { background-position: 0 -60px; }
+
+.main .cu_main_table01 .table.sec_table .cu_table02_th02 p span { font-size: 14px; }
+
+.main .cu_main_table01 .table .cu_goods_msg { overflow: hidden; box-sizing: border-box; padding: 10px; }
+
+.main .cu_main_table01 .table .cu_goods_msg a { color: #333; }
+
+.main .cu_main_table01 .table .cu_goods_msg a:hover { color: #ff5073; }
+
+.main .cu_main_table01 .table .cu_goods_msg img { float: left; margin-right: 10px; border: 1px solid #ccc; }
+
+.main .cu_main_table01 .table .cu_goods_price::before, .main .cu_main_table01 .table .total_price::before { content: '￥'; }
+
+.main .cu_main_table01 .table .cu_remove_btn:hover { color: #ff5073; }
+
+.main .cu_main_table01 .table .cu_goods_num { border: 1px solid #ccc; overflow: hidden; display: inline-block; }
+
+.main .cu_main_table01 .table .cu_goods_num span { display: block; float: left; height: 22px; line-height: 22px; width: 30px; text-align: center; }
+
+.main .cu_main_table01 .table .cu_goods_num span.num_show { border-left: 1px solid #ccc; border-right: 1px solid #ccc; width: 34px; }
+
+.main .cu_main_table01 .table .cu_goods_num span.num_sub, .main .cu_main_table01 .table .cu_goods_num span.num_add { background: #eaeaea; cursor: pointer; }
+
+.main .cu_main_table01 .table .for_table td { height: 50px; }
