@@ -1,5 +1,5 @@
 require(['config'], function () {
-	require(['jquery'], function ($) {
+	require(['jquery','common'], function ($,com) {
 
 		//加载尾部
 		$('.load_footer').load('footer.html .footer');
@@ -16,6 +16,9 @@ require(['config'], function () {
 					//console.log(res)
 					var res = JSON.parse(res);
 					if (res.res) {
+						var date = new Date();
+						var nextDate = new Date(date.getDate(date.setDate() + 7));
+						com.Cookie.set('username', $('.reg_box_name').val(), nextDate, '/');
 						window.location.href = '../index.html';
 					} else {
 						$('.reg_msg').html(res.msg).show();

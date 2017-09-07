@@ -27,7 +27,7 @@ gulp.task('server', function () {
 		// server:'./src/',
 
 		// 代理服务器
-		proxy: 'http://localhost/mmx/',
+		proxy: 'http://localhost:8000/',
 
 		// 端口
 		port: 2008,

@@ -190,11 +190,64 @@
 					}
 				}
 			}
-			.for_table{
-				td{
-					height: 50px;
+		}
+		.for_table{
+			td{
+				height: 50px;
+				padding-top: 0;
+				padding-bottom: 0;
+				p{
+					display: inline-block;
+					margin-bottom: 0;
+					color: #333;
+					&.deleteAll:hover,&.removeAll:hover{
+						color: #ff5073;
+					}
+					&.deleteAll:hover i{
+						background-position: -30px -90px;
+					}
+					&.deleteAll i{
+						width: 19px;
+						height: 20px;
+						margin-right: 5px;
+						background-position: 0 -90px;
+					}
+					&.removeAll:hover i{
+						background-position: -229px 0;
+					}
+					&.removeAll i{
+						width: 20px;
+						height: 20px;
+						margin-right: 5px;
+						background-position: -203px 0;
+					}
+					&.totalPrice{
+						font-size: 14px;
+						.cu_goods_totalPrice{
+							font-size: 22px;
+							color: #ff5073;
+							&::before{
+								content: '￥';
+							}
+						}
+					}
+					i{
+						font-style: normal;
+						color: #999;
+					}
+				}
+				.currency_btn{
+					display: block;
+					border: 0;
+					width: 160px;
+					height: 60px;
+					background: #ff5073;
+					color: #fff;
+					font-size: 18px;
+
 				}
 			}
+
 		}
 	}
 }

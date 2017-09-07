@@ -1,0 +1,231 @@
+@import 'var';
+@import 'common';
+
+.header{
+	.he_top{
+		background-color: #ff5073;
+		width: 100%;
+		height: 30px;
+		color: #fff;
+		font-size: 12px;
+		line-height: 30px;
+		.container{
+			.he_top_left{
+				float: left;
+				margin-left: 6px;
+				p{
+					display: inline-block;
+					a{
+						color: #fff;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			.he_top_right{
+				float: right;
+				margin-right: 6px;
+				ul{
+					li{
+						float: left;
+						margin: 0 10px;
+						a{
+							color: rgb(255, 255, 255);
+						}
+						.disabled{
+							display: none;
+						}
+						&.he_top_phone{
+							position: relative;
+							.phone_erweima{
+								box-sizing: border-box;
+								padding-left: 102px;
+								width: 256px;
+								height: 105px;
+								background: url('./img/newhome_icon.png') no-repeat 0 -192px;
+								position: absolute;
+								left: -100px;
+								top: 35px;
+								.phone_img{
+									height: 100%;
+									width: 105px;
+									box-sizing: border-box;
+									border: 2px solid #ff5073;
+									position: relative;
+									img{
+										height: 100%;
+									}
+									&:before{
+										content: '';
+										display: block;
+										height: 0;
+										width: 0;
+										border: 6px solid transparent;
+										border-bottom: 6px solid #ff5073;
+										position: absolute;
+										top: -12px;
+										left: 50px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.he_logo{
+		height: 90px;
+		box-sizing: border-box;
+		padding: 20px 0;
+		width: 100%;
+		.container{
+			.logo{
+				height: 36px;
+				float: left;
+				img{
+					height: 100%;
+				}
+			}
+			.main_search{
+				float: left;
+				margin-left: 100px;
+				box-sizing: border-box;
+				height: 36px;
+				width: 420px;
+				height: 36px;
+				border: 1px solid #ff5073;
+				border-radius: 36px;
+				position: relative;
+				padding: 0 40px;
+				&.on_foucs{
+					border: 2px solid #ff5073;
+				}
+				input{
+					box-sizing: border-box;
+					border: 0;
+					height: 100%;
+					width: 330px;
+					font-size: 14px;
+				}
+				.icon_search{
+					position: absolute;
+					right: 10px;
+					top: 5px;
+					width: 23px;
+					height: 23px;
+					background: url('./img/newhome_icon.png') no-repeat 0 -88px;
+					cursor: pointer;
+				}
+				.clear_search{
+					position: absolute;
+					right: 40px;
+					top: 10px;
+					width: 20px;
+					height: 20px;
+					background: url('./img/newhome_icon.png') no-repeat 0 -138px;
+					cursor: pointer;
+					&.disabled{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.nav{
+		width: 100%;
+		border-top: 1px solid $borderColor;
+		border-bottom: 1px solid $borderColor;
+		.container{
+			.nav_classify{
+				float: left;
+				box-sizing: border-box;
+				width: 160px;
+				height: 44px;
+				padding: 15px 24px 0 10px;
+				font-size: 16px;
+				color: #000;
+				background: #f2f2f2;
+				position: relative;
+				.nav_fir_ul{
+					width: 100%;
+					height: 480px;
+					position: absolute;
+					left: 0;
+					top: 47px;
+					background: rgba(0,0,0,.5);
+					font-size: 14px;
+					&.disabled{
+						display: none;
+					}
+					li{
+						box-sizing: border-box;
+						padding-top: 10px;
+						padding-left: 36px;
+						line-height: 40px;
+						&:hover a{
+							color:#ff5073;
+						}
+						&:hover .nav_sec_classify{
+							display: block;
+						}
+						a{
+							color: #fff;
+						}
+						.nav_sec_classify{
+							position: absolute;
+							left: 100%;
+							top: 0;
+							width: 172px;
+							height: 480px;
+							border-right: 4px solid rgba(0,0,0,.1);
+							display: none;
+							.nav_sec_ul{
+								box-sizing: border-box;
+								height: 100%;
+								padding-top: 10px;
+								background-color: #fff;
+								li{
+									box-sizing: border-box;
+									width: 100%;
+									padding-left: 36px;
+									line-height: 40px;
+									a{
+										color: #333;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.nav_title{
+				float: left;
+				margin-left: 20px;
+				box-sizing: border-box;
+				padding-top: 15px;
+				text-align: center;
+				li{
+					float: left;
+					margin: 0 10px;
+					padding: 5px;
+					a{color: #000;}
+					&.nav_title_jisu{
+						position: relative;
+						i{
+							position: absolute;
+							left: 10px;
+							top: -10px;
+							width: 30px;
+							height: 20px;
+							background: url('./img/newhome_icon.png') no-repeat 0 -319px;
+							
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
