@@ -70,6 +70,9 @@ body,html{
 					transition: all .5s;
 					opacity: 1;
 				}
+				&:hover a{
+					text-decoration: none;
+				}
 				&.cs_li_cart{
 					margin-top: 150px;
 					p{
@@ -135,9 +138,23 @@ body,html{
 			.cs_cart_type{
 				font-size: 14px;
 				line-height: 2;
-				padding-bottom: 10px;
+				margin-bottom: 10px;
+				.cs_login_btn{
+					display:inline-block;
+					padding: 0 6px;
+					line-height: 20px;
+					border-radius: 4px;
+					color: #fff;
+					font-size: 12px;
+					background-color: #ff5073;
+					cursor: pointer;
+					margin-left: 10px;
+				}
 			}
 			.cs_cart_goods{
+				height: 540px;
+				overflow-x: hidden;
+				overflow-y: auto;
 				ul{
 					width: 100%;
 					li{
@@ -148,8 +165,6 @@ body,html{
 						position: relative;
 						.goos_left{
 							float: left;
-							margin-left: 10px;
-							padding: 5px;
 							a{
 								display: block;
 								img{
@@ -160,7 +175,7 @@ body,html{
 						}
 						.goods_right{
 							float: right;
-							width: 150px;
+							width: 146px;
 							font-size: 14px;
 							line-height: 1.6;
 							.goods_title{
@@ -181,7 +196,7 @@ body,html{
 						}
 						.goods_price{
 							color:$highLight;
-							line-height: 1.4;
+							line-height: 2;
 							&::before{
 								content:'￥'
 							}
@@ -189,7 +204,7 @@ body,html{
 						.goods_remove{
 							position: absolute;
 							right: 6px;
-							top: 80px;
+							top: 82px;
 							color: #bbb;
 							span{
 								font-size: 18px;

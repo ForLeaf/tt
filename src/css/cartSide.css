@@ -3,7 +3,7 @@ ul, li { list-style: none; }
 
 img { border: 0; display: block; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #333; }
 
 .container { margin: 0 auto; min-width: 1200px; max-width: 1200px; }
 
@@ -35,6 +35,8 @@ body, html { width: 100%; height: 100%; }
 
 .cartSide .cs_main ul li:hover { background-color: #ed145b; transition: all .5s; opacity: 1; }
 
+.cartSide .cs_main ul li:hover a { text-decoration: none; }
+
 .cartSide .cs_main ul li.cs_li_cart { margin-top: 150px; }
 
 .cartSide .cs_main ul li.cs_li_cart p { font-size: 14px; box-sizing: border-box; width: 100%; padding: 0 10px; }
@@ -55,19 +57,23 @@ body, html { width: 100%; height: 100%; }
 
 .cartSide .cs_op_cart .cs_cart_main { box-sizing: border-box; padding: 5px 10px; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_type { font-size: 14px; line-height: 2; padding-bottom: 10px; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_type { font-size: 14px; line-height: 2; margin-bottom: 10px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_type .cs_login_btn { display: inline-block; padding: 0 6px; line-height: 20px; border-radius: 4px; color: #fff; font-size: 12px; background-color: #ff5073; cursor: pointer; margin-left: 10px; }
+
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods { height: 540px; overflow-x: hidden; overflow-y: auto; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul { width: 100%; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li { box-sizing: border-box; padding: 15px 0 5px 0; border-bottom: 1px solid #ddd; overflow: hidden; position: relative; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left { float: left; margin-left: 10px; padding: 5px; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left { float: left; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left a { display: block; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goos_left a img { width: 88px; height: 95px; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right { float: right; width: 150px; font-size: 14px; line-height: 1.6; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right { float: right; width: 146px; font-size: 14px; line-height: 1.6; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .goods_title a { color: #333; }
 
@@ -75,11 +81,11 @@ body, html { width: 100%; height: 100%; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_right .num_change .num_cut { font-size: 20px; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_price { color: #ff5073; line-height: 1.4; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_price { color: #ff5073; line-height: 2; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_price::before { content: '￥'; }
 
-.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_remove { position: absolute; right: 6px; top: 80px; color: #bbb; }
+.cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_remove { position: absolute; right: 6px; top: 82px; color: #bbb; }
 
 .cartSide .cs_op_cart .cs_cart_main .cs_cart_goods ul li .goods_remove span { font-size: 18px; }
 

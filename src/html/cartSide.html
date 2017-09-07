@@ -7,12 +7,13 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../font/iconfont.css">
 	<link rel="stylesheet" href="../css/cartSide.css">
+	<link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="cartSide">
 		<div class="cs_main">
 			<ul>
-				<li class="cs_li_cart">
+				<li class="cs_li_cart" id="end">
 					<a href="javascript:void(0)">
 						<span class="iconfont icon-gouwuche"></span>
 						<p>购物车</p>
@@ -47,29 +48,12 @@
 				<span class="cart_close">&times;</span>
 			</div>
 			<div class="cs_cart_main">
-				<div class="cs_cart_type">其他商品 </div>
+				<div class="cs_cart_type">您尚未登录 登录后商品将被保存 <span class="cs_login_btn">登录</span></div>
 				<div class="cs_cart_goods">
-					<ul>
-						<li>
-							<div class="goos_left">
-								<a href=""><img src="../img/goods/jayjun-_-10_.jpg"></a>
-							</div>
-							<div class="goods_right">
-								<div class="goods_title">
-									<a href=""><span>JAYJUN 樱花水光面膜三部曲 ...</span></a>
-								</div>
-								<div class="num_change">
-									<a class="num_cut iconfont icon-jian"></a>
-									<span>12</span>
-									<a class="num_add iconfont icon-jia"></a>
-								</div>
-								<div class="goods_price">109.00</div>
-								<a class="goods_remove"><span class="iconfont icon-lajixiang"></span></a>
-							</div>
-						</li>
+					<ul class="cs_cart_ul01">
 					</ul>
 				</div>
-				<div class="goods_total">
+				<div class="goods_total" id="cs_total">
 					<p>本仓共<span class="total_num"> 12 </span>件商品<span class="total_price"> 1308.00 </span></p>
 				</div>
 				<div class="cart_submit">

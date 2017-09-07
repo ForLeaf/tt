@@ -2,7 +2,7 @@ ul, li { list-style: none; }
 
 img { border: 0; display: block; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #333; }
 
 .container { margin: 0 auto; min-width: 1200px; max-width: 1200px; }
 
@@ -29,6 +29,8 @@ body, html { width: 100%; height: 100%; }
 .header .he_top .container .he_top_right ul li { float: left; margin: 0 10px; }
 
 .header .he_top .container .he_top_right ul li a { color: white; }
+
+.header .he_top .container .he_top_right ul li .login_out, .header .he_top .container .he_top_right ul li .login_username { cursor: pointer; }
 
 .header .he_top .container .he_top_right ul li .disabled { display: none; }
 

@@ -19,6 +19,7 @@ require(['config'], function () {
 		//退出登录 清除用户cookie
 		$('.login_out').click(function () {
 			com.Cookie.remove('username');
+			com.Cookie.remove('carlist');
 			$('.in_login_btn').removeClass('disabled');
 			$('.in_reg_btn').removeClass('disabled');
 			$('.login_out').addClass('disabled');
@@ -57,6 +58,12 @@ require(['config'], function () {
 			if ($(this).val() && event.keyCode === 13) {
 				window.location.href = base.baseUrl + 'html/search.html?search=' + encodeURI($('.search').val());
 			}
+		})
+
+		//点击跳转列表页
+		$('.nav_fir_li').click(function (event) {
+			event.preventDefault();
+			window.location.href = base.baseUrl + 'html/list.html?classifyId=' + $(this).attr('data-claId');
 		})
 	})
 })
