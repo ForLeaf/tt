@@ -1,5 +1,8 @@
 @import 'var';
 @import 'common';
+@import 'footer';
+@import 'header';
+@import 'cartSide';
 
 .main{
 	margin-top: 10px;
@@ -25,6 +28,7 @@
 						float: left;
 						font-size: 18px;
 						line-height: 18px;
+						margin : 0;
 					}
 					.ma_search_order{
 						width: 20px;
@@ -100,19 +104,80 @@
 				.pagination_ul{
 					overflow: hidden;
 					margin-right: 10px;
-					.pagination_li{
+					li{
 						float: left;
-						width: 30px;
-						height: 30px;
-						font-size: 14px;
-						line-height: 30px;
-						text-align: center;
-						&.pagination_last{
-							width: 0;
-							height: 0;
-							border: 6px solid transparent;
-							border-left: 6px solid #ccc;
-							margin-top: 8px;
+						width: 33%;
+						box-sizing: border-box;
+						padding: 0 30px;
+						margin-bottom: 20px;
+						.mc_goodsCard{
+							border: 1px solid transparent;
+							box-sizing: border-box;
+							padding: 10px;
+							&:hover{
+								border: 1px solid #ccc;
+								box-shadow: 0 0 10px 0 #ccc;
+							}
+						}
+						.mc_goodsCard_img{
+							box-sizing: border-box;
+							padding: 10px 40px 20px 40px;
+							img{
+								width:160px;
+								height: 160px;
+							}
+						}
+						.mc_goodsCard_title{
+							margin-top: 6px;
+							text-align: center;
+							.goods_category{
+								font-size: 14px;
+								line-height: 2;
+							}
+							.goods_goodsName{
+								font-size: 16px;
+								line-height: 2;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space:nowrap;
+							}
+						}
+						.mc_goodsCard_price{
+							text-align: center;
+							.mc_goodsCard_ourProce{
+								font-size: 16px;
+								line-height: 30px;
+								color: #ff7e00;
+								&::before{
+									content:'￥';
+								}
+							}
+							.mc_goodsCard_price_ll{
+								.mc_goodsCard_price_show{
+									font-size: 14px;
+									text-decoration: line-through;
+									line-height: 30px;
+									color:#ccc;
+									&::before{
+										content:'￥';
+									}
+								}
+							}
+							.mc_goodsCard_cartOnBtn{
+								text-align: center;
+								margin-top: 6px;
+								button{
+									width: 140px;
+									height:40px;
+									border: 0;
+									background: rgb(253, 73, 172);
+									border-radius: 4px;
+									color:#fff;
+									font-size: 16px;
+									outline: none;
+									cursor: pointer;
+								}
+							}
 						}
 					}
 				}

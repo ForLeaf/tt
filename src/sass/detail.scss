@@ -1,5 +1,8 @@
 @import 'var';
 @import 'common';
+@import 'header';
+@import 'cartSide';
+@import 'footer';
 
 .de_main{
 	margin-top: 15px;
@@ -11,6 +14,7 @@
 			width: 350px;
 			border: 1px solid #ccc;
 			text-align: center;
+			margin-left: 40px;
 			img{
 				width: 100%;
 			}
@@ -20,11 +24,12 @@
 			width: 350px;
 			position: relative;
 			text-align: center;
+			margin-left: 40px;
 			img{
 				display: inline-block;
 			}
 			#swiper-container2{
-				width: 300px;
+				width: 350px;
 				.active-nav{
 					box-sizing: border-box;
 					border:1px solid #ff5073;
@@ -36,7 +41,7 @@
 				background: url('../img/hover-prev.png') no-repeat center center;
 				position: absolute;
 				bottom: 18px;
-				left: 0px;
+				left: -20px;
 				&.button-disabled{
 					background: url('../img/disabled-prev.png') no-repeat center center;
 				}
@@ -47,7 +52,7 @@
 				background: url('../img/hover-next.png') no-repeat center center;
 				position: absolute;
 				bottom: 18px;
-				right: 0px;
+				right: -20px;
 				&.button-disabled{
 					background: url('../img/disabled-next.png') no-repeat center center;
 				}
@@ -57,6 +62,12 @@
 	.de_main_right{
 		float: left;
 		width: 60%;
+		.de_goods_description{
+			box-sizing: border-box;
+			padding: 10px;
+			font-size: 14px;
+			color: #666;
+		}
 		.de_goods_title{
 			font-size: 20px;
 			line-height: 2.4;
@@ -187,6 +198,7 @@
 					border-left: 1px solid #ccc;
 					border-right: 1px solid #ccc;
 					vertical-align: bottom;
+					text-align: center;
 				}
 			}
 			.de_goods_has{
@@ -273,6 +285,7 @@
 		margin-top: 20px;
 		.de_area3_nav{
 			overflow: hidden;
+			cursor: pointer;
 			ul{
 				float: left;
 				background: #eaeaea;
@@ -299,7 +312,7 @@
 			border: 1px solid #ccc;
 			div{
 				&[data-show='opt1']{
-					display: none;
+					//display: none;
 					img{
 						margin: 0 auto;
 					}
@@ -329,6 +342,7 @@
 					line-height: 2;
 				}
 				&[data-show='opt4']{
+					display:none;
 					box-sizing: border-box;
 					width: 100%;
 					padding: 20px;

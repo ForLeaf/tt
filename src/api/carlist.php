@@ -35,7 +35,11 @@
 				$sql = "update cart set num=$num where username='$username' and goodsId='$goodsId'";
 				$result = $conn->query($sql);
 				if($result){
-					echo resStr(true,'','更新数据成功');
+					$sql = "select goodsId,num,ourPrice from cart where username='$username' and goodsId='$goodsId';";
+					$res = $conn->query($sql);
+					$row = $res->fetch_assoc();
+
+					echo resStr(true,$row,'更新数据成功');
 				}else{
 					echo resStr(false,'',$conn->error);
 				}
@@ -52,7 +56,11 @@
 			$sql .= " values ('$username','$name','$category','$imgurl',$qty,$price,'$goodsId');";
 			$result = $conn->query($sql);
 			if($result){
-				echo resStr(true,'','插入数据成功');
+				$sql = "select * from cart where username='$username' and goodsId='$goodsId';";
+				$result = $conn->query($sql);
+				$row = $result->fetch_all(MYSQLI_ASSOC);
+
+				echo resStr(true,$row,'插入数据成功');
 			}else{
 				echo resStr(false,'',$conn->error);
 			}

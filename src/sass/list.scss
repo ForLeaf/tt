@@ -1,5 +1,8 @@
 @import 'var';
 @import 'common';
+@import 'header';
+@import 'footer';
+@import 'cartSide';
 
 .main{
 	margin-top: 10px;
@@ -11,8 +14,10 @@
 		border-bottom: 1px solid #ccc;
 		padding: 5px 0;
 		line-height: 48px;
+		margin-bottom: 20px;
 		.main_nav_total{
 			float: left;
+			margin-bottom: 0;
 		}
 		.nav_total_select{
 			float: left;
@@ -23,7 +28,7 @@
 				text-align: center;
 			}
 		}
-		.nav_order{
+		.nav_order.upper{
 			display: inline-block;
 			width: 30px;
 			height: 30px;
@@ -31,11 +36,23 @@
 			margin-top: 10px;
 			background: url('./img/pix.png') no-repeat 0 -87px transparent;
 			transition: all .5s;
+
 			&:hover{
 				background-color: #000;
 				color: #fff;
 				background-position: -30px -87px;
 			}
+		}
+		.nav_order.down{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-left: 6px;
+			margin-top: 10px;
+			background: url('./img/pix.png') no-repeat -30px -87px transparent;
+			color: #fff;
+			background-color: #000;
+			transition: all .5s;
 		}
 	}
 	.list_main_goodslist{
@@ -46,6 +63,7 @@
 				width: 25%;
 				box-sizing: border-box;
 				padding: 0 30px;
+				margin-bottom: 20px;
 				.mc_goodsCard{
 					border: 1px solid transparent;
 					box-sizing: border-box;
@@ -59,7 +77,8 @@
 					box-sizing: border-box;
 					padding: 10px 40px 20px 40px;
 					img{
-						width: 100%;
+						width:160px;
+						height: 160px;
 					}
 				}
 				.mc_goodsCard_title{
@@ -72,6 +91,9 @@
 					.goods_goodsName{
 						font-size: 16px;
 						line-height: 2;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space:nowrap;
 					}
 				}
 				.mc_goodsCard_price{

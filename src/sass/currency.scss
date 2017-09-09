@@ -1,5 +1,6 @@
 @import 'var';
 @import 'common';
+@import 'footer';
 
 .header{
 	.he_top{
@@ -30,7 +31,18 @@
 					li{
 						float: left;
 						margin: 0 10px;
-						a{color: rgb(255, 255, 255);}
+						a{
+							color: rgb(255, 255, 255);
+						}
+						.login_out,.login_username{
+							cursor: pointer;
+						}
+						.disabled{
+							display: none;
+						}
+						&.he_top_phone{
+							position: relative;
+						}
 					}
 				}
 			}
@@ -111,6 +123,9 @@
 					cursor: pointer;
 					vertical-align: middle;
 					background: url('./img/mbar-smallICon.png') no-repeat -226px -28px;
+					&.active{
+						background: transparent url('./img/mbar-smallICon.png') no-repeat -254px -28px;
+					}
 				}
 			}
 			.TypeIcon{
@@ -125,6 +140,7 @@
 				vertical-align: middle;
 				z-index: 10px;
 				background: url('./img/mbar-smallICon.png') no-repeat;
+				
 			}
 			&.sec_table{
 				border: 0;
@@ -157,6 +173,8 @@
 					}
 				}
 				img{
+					width: 67px;
+					height: 67px;
 					float:left;
 					margin-right: 10px;
 					border: 1px solid #ccc;
@@ -167,6 +185,7 @@
 			}
 			.cu_remove_btn:hover{
 				color:#ff5073;
+				cursor: pointer;
 			}
 			.cu_goods_num{
 				border: 1px solid #ccc;

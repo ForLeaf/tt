@@ -18,8 +18,14 @@
 				</div>
 				<div class="he_top_right clearfix">
 					<ul class="clearfix">
-						<li><a href="./html/login.html">登录</a></li>
-						<li><a href="./html/reg.html">注册</a></li>
+						<li>
+							<a href="/src/html/login.html" class="in_login_btn disabled">登录</a>
+							<span class="login_out">退出</span>
+						</li>
+						<li>
+							<a href="/src/html/reg.html" class="in_reg_btn disabled">注册</a>
+							<span class="login_username"></span>
+						</li>
 						<li>|</li>
 						<li class="he_top_phone ">
 							<i class="iconfont icon-shouji"></i>
@@ -58,7 +64,7 @@
 				<table class="table" >
 					<tbody>
 					<tr class="row">
-						<th class="col-md-1 radioGroup selectAll"><i class="radioItem"></i></th>
+						<th class="col-md-1 radioGroup "><i class="radioItem selectAll active"></i></th>
 						<th class="col-md-4 cu_table01_th02">商品信息</th>
 						<th class="col-md-1">规格</th>
 						<th class="col-md-2">单价</th>
@@ -71,7 +77,7 @@
 				<table class="table sec_table" >
 					<tbody>
 						<tr class="row">
-							<td class="col-md-1 radioGroup selectGroup_01"><i class="radioItem"></i></td>
+							<td class="col-md-1 radioGroup "><i class="radioItem selectGroup_01 active" style="margin-left:4px;"></i></td>
 							<td class="col-md-11 cu_table02_th02">
 								<p><i class="TypeIcon smallIcon"></i>其他商品 <span>满99元包邮</span></p>
 							</td>
@@ -79,55 +85,15 @@
 					</tbody>
 				</table>
 				<table class="table thr_table">
-					<tbody>
-						<tr class="row">
-							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
-							<td class="col-md-4">
-								<div class="cu_goods_msg">
-									<a href="">
-										<img src="../img/goods/goods_001_sma.jpg" alt="you see">
-										<span>SKINFOOD 思亲肤 荞麦蜜粉散粉23g 40#紫色</span>
-									</a>
-								</div>
-							</td>
-							<td class="col-md-1"><span>--</span></td>
-							<td class="col-md-2"><span class="cu_goods_price">49.00</span></td>
-							<td class="col-md-2">
-								<div class="cu_goods_num">
-									<span class="num_sub">-</span>
-									<span class="num_show"></span>
-									<span class="num_add">+</span>
-								</div>
-							</td>
-							<td class="col-md-1"><span class="total_price">196</span></td>
-							<td class="col-md-1"><span class="cu_remove_btn">删除</span></td>
-						</tr>
-						<tr class="row">
-							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
-							<td class="col-md-4">商品信息</td>
-							<td class="col-md-1">规格</td>
-							<td class="col-md-2">单价</td>
-							<td class="col-md-2">数量</td>
-							<td class="col-md-1">金额</td>
-							<td class="col-md-1">操作</td>
-						</tr>
-						<tr class="row">
-							<td class="col-md-1 radioGroup group_01"><i class="radioItem"></i></td>
-							<td class="col-md-4">商品信息</td>
-							<td class="col-md-1">规格</td>
-							<td class="col-md-2">单价</td>
-							<td class="col-md-2">数量</td>
-							<td class="col-md-1">金额</td>
-							<td class="col-md-1">操作</td>
-						</tr>
+					<tbody class="thr_body">
 					</tbody>
 				</table>
 				<table class="table for_table">
 					<tbody>
 						<tr class="row">
-							<td class="col-md-1 radioGroup selectAll"><i class="radioItem"></i></td>
+							<td class="col-md-1 radioGroup "><i class="radioItem selectAll active"></i></td>
 							<td class="col-md-1">
-								<p class="deleteAll"><i class="TypeIcon smallIcon"></i>删除</p>
+								<p class="deleteAll"><i class="TypeIcon smallIcon deleteAll_icon"></i>删除</p>
 							</td>
 							<td class="col-md-6">
 								<p class="removeAll"><i class="TypeIcon smallIcon"></i>清空失效的商品</p>
@@ -142,5 +108,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="addFooter"></div>
+	<script src="../js/require.js" data-main="../js/currency"></script>	
 </body>
 </html>

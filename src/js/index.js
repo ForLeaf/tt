@@ -65,7 +65,7 @@ require(['config'], function () {
 							return `
 							<li data-guid="${ele.goodsId}">
 								<div class="mc_goodsCard">
-									<a href="${base.baseUrl}html/detail.html?goodsid=${ele.goodsId}">
+									<a href="${base.baseUrl}html/detail.html?goodsId=${ele.goodsId}">
 										<div class="mc_goodsCard_img">
 											<img class="lazy" alt="${ele.goodsName}" data-original="./${ele.imgUrl}">
 										</div>
@@ -197,11 +197,11 @@ require(['config'], function () {
 					return `
 					<li data-guid="${item.goodsId}">
 						<div class="goos_left">
-							<a href="${base.baseUrl}html/detail.html?goodsid=${item.goodsId}"><img src="${item.imgUrl}"></a>
+							<a href="${base.baseUrl}html/detail.html?goodsId=${item.goodsId}"><img src="${item.imgUrl}"></a>
 						</div>
 						<div class="goods_right">
 							<div class="goods_title">
-								<a href="${base.baseUrl}html/detail.html?goodsid=${item.goodsId}">
+								<a href="${base.baseUrl}html/detail.html?goodsId=${item.goodsId}">
 									<span>${item.category} ${item.goodsName}</span>
 								</a>
 							</div>

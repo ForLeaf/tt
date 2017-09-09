@@ -20,11 +20,11 @@ require(['config'], function () {
 				return `
 				<li data-guid="${item.goodsId}">
 					<div class="goos_left">
-						<a href="${base.baseUrl}html/detail.html?goodsid=${item.goodsId}"><img src="${item.imgUrl}"></a>
+						<a href="${base.baseUrl}html/detail.html?goodsId=${item.goodsId}"><img src="${item.imgUrl}"></a>
 					</div>
 					<div class="goods_right">
 						<div class="goods_title">
-							<a href="${base.baseUrl}html/detail.html?goodsid=${item.goodsId}">
+							<a href="${base.baseUrl}html/detail.html?goodsId=${item.goodsId}">
 								<span>${item.category} ${item.goodsName}</span>
 							</a>
 						</div>
@@ -67,7 +67,7 @@ require(['config'], function () {
 			//初始化写入cookie
 			var carlist = com.Cookie.get('carlist');
 			carlist = carlist ? JSON.parse(carlist) : [];
-			createCart(res.data);
+			createCart(carlist);
 		}
 
 
@@ -162,6 +162,14 @@ require(['config'], function () {
 
 									//隐藏 cs_cart_type
 									$('.cs_cart_type').css('display', 'none');
+									//cookie检查是否登录
+									
+									$('.in_login_btn').addClass('disabled');
+									$('.in_reg_btn').addClass('disabled');
+									$('.login_out').removeClass('disabled');
+									$('.login_username').removeClass('disabled');
+									$('.login_username').html(com.Cookie.get('username'));
+									
 								},1000)
 							} else {
 								layer.alert('登录失败，用户名或密码不正确', {
@@ -204,19 +212,26 @@ require(['config'], function () {
 					$.post(base.baseUrl + 'api/carlist.php', {
 						data : JSON.stringify(goods),
 					}, function (res) {
-						console.log(res)
+						var res = JSON.parse(res);
+						if (res.res) { 
+							var current_total_price = Number($('#cs_total').find('.total_price').html());
+							var current_allnum = Number($('#cs_total').find('.total_num').html());
+							var current_num = Number($currentli.find('.cart_goods_num').html());
+							var dif_num = Number(res.data.num) - current_num;
+							var dif_price = dif_num * res.data.ourPrice;
+							console.log(dif_price,dif_num)
+							$('#cs_total').find('.total_price').html((current_total_price + dif_price).toFixed(2));
+							$('#cs_total').find('.total_num').html(current_allnum + dif_num);
+							$currentli.find('.cart_goods_num').html(res.data.num);
+						} else {
+							console.log(res.msg)
+						}
 					})
 				}
-				//更新span
-				$currentli.find('.cart_goods_num').html(num+1);
-
-				//更新cookie 貌似没什么意义
-
 			}
 
 			//点击减少
 			if ($(event.target).hasClass('num_cut')) {
-
 				var $currentli = $(event.target).parents('li');
 				var num = Number($currentli.find('.cart_goods_num').html());
 				//更新数据库
@@ -230,23 +245,26 @@ require(['config'], function () {
 					$.post(base.baseUrl + 'api/carlist.php', {
 						data : JSON.stringify(goods),
 					}, function (res) {
-						console.log(res);
+						var res = JSON.parse(res);
+						if (res.res) { 
+							var current_total_price = Number($('#cs_total').find('.total_price').html());
+							var current_allnum = Number($('#cs_total').find('.total_num').html());
+							var current_num = Number($currentli.find('.cart_goods_num').html());
+							var dif_num = Number(res.data.num) - current_num;
+							var dif_price = dif_num * res.data.ourPrice;
+							console.log(dif_price,dif_num)
+							$('#cs_total').find('.total_price').html((current_total_price + dif_price).toFixed(2));
+							$('#cs_total').find('.total_num').html(current_allnum + dif_num);
+							$currentli.find('.cart_goods_num').html(res.data.num);
+						} else {
+							console.log(res.msg)
+						}
 					})
 				}
-				
-				if (num - 1 > 0) {
-					//更新span
-					$currentli.find('.cart_goods_num').html(num-1);
-				} else {
-					$currentli.find('.cart_goods_num').html(num);
-				}
-
-				//更新cookie 貌似没什么意义
 			}
 
 			//点击删除
 			if ($(event.target).hasClass('icon-lajixiang')) {
-				console.log(666)
 				var $currentli = $(event.target).parents('li');
 				var num = Number($currentli.find('.cart_goods_num').html());
 				//更新数据库
@@ -256,12 +274,21 @@ require(['config'], function () {
 						username: com.Cookie.get('username'),
 						goodsId : $currentli.attr('data-guid'),
 					}, function (res) {
-						console.log(res);
-						$currentli.remove();
+						var res = JSON.parse(res);
+						if (res.res) { 
+							var current_total_price = Number($('#cs_total').find('.total_price').html());
+							var current_allnum = Number($('#cs_total').find('.total_num').html());
+							var all_price = Number(res.data.num) * parseFloat(res.data.ourPrice);
+							var current_length = $('#end').find('.goods_num').html();
+							$('#cs_total').find('.total_price').html((current_total_price - all_price).toFixed(2));
+							$('#cs_total').find('.total_num').html(current_allnum - res.data.num);
+							$('#end').find('.goods_num').html(current_length - 1);
+							$currentli.remove();
+						} else {
+							console.log(res.msg)
+						}
 					})
-				} else {
-					$currentli.remove();
-				}
+				} 
 			}
 		})
 			
