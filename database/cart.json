@@ -1,0 +1,48 @@
+{
+"RECORDS":[
+{
+"id":0000000042,
+"username":"13631421080",
+"goodsName":"玫瑰水光针面膜 10片",
+"category":"JAYJUN",
+"imgUrl":"http:\/\/localhost:2008\/src\/img\/goods\/goods_004_mid.jpg",
+"num":1,
+"ourPrice":90.00,
+"datetime":"2017\/9\/9 16:38:38",
+"goodsId":"0004"
+},
+{
+"id":0000000041,
+"username":"13631421080",
+"goodsName":"樱花水光面膜三部曲 10片",
+"category":"JAYJUN",
+"imgUrl":"http:\/\/localhost:2008\/src\/img\/goods\/goods_002_mid.jpg",
+"num":9,
+"ourPrice":88.00,
+"datetime":"2017\/9\/9 12:30:21",
+"goodsId":"0002"
+},
+{
+"id":0000000039,
+"username":"13631421080",
+"goodsName":"水润光彩焕龄钻石透亮 5片",
+"category":"bonvivant",
+"imgUrl":"http:\/\/localhost:2008\/src\/img\/goods\/goods_012_mid.jpg",
+"num":1,
+"ourPrice":55.00,
+"datetime":"2017\/9\/8 16:10:18",
+"goodsId":"0012"
+},
+{
+"id":0000000040,
+"username":"13631421080",
+"goodsName":"光亮效果补水滋润珍珠面膜 10片",
+"category":"LEADERS 丽得姿",
+"imgUrl":"http:\/\/localhost:2008\/src\/img\/goods\/goods_009_mid.jpg",
+"num":1,
+"ourPrice":23.00,
+"datetime":"2017\/9\/8 16:10:19",
+"goodsId":"0009"
+}
+]
+}
